@@ -24,14 +24,12 @@ const qrcode = require("qrcode-terminal");
 const crypto = require('crypto');
 const axios = require('axios').default;
 const imageToBase64 = require('image-to-base64');
-const googleImage = require('g-i-s');
 
 //_ARQUIVOS DA LIB
 const {color, bgcolor} = require('./lib/color');
 const {fetchJson} = require('./lib/fetcher');
 const {recognize} = require('./lib/ocr');
 const {wait, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close, addATM, addKoinUser, checkATMuser, temporizador } = require('./lib/functions');
-const { webp2gifFile } = require("./lib/gif.js")
 const { cmdadd } = require('./lib/totalcmd.js')
 const { getRegisterNo, getRegisterName, getRegisterSerial, getRegisterAge, getRegisterTime, getRegisteredRandomId, addRegisteredUser, createSerial, checkRegisteredUser } = require('./lib/register.js')
 const { getLevelingXp, getLevelingId, addLevelingXp, addLevelingLevel, addLevelingId, getLevelingLevel, getUserRank, addCooldown } = require('./lib/leveling.js')
